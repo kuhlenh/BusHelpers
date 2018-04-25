@@ -2,7 +2,7 @@
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace BusHelpers
+namespace BusInfoHelpers
 {
     public static class BusHelpers
     {

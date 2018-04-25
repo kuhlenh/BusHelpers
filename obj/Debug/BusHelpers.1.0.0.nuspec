@@ -7,6 +7,7 @@
     <owners>BusHelpers</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Package Description</description>
+    <repository type="git" url="https://github.com/kuhlenh/BusHelpers.git" commit="4496fb5f8b96c8d4e0606a8fd1fbb9e63f81fc1f" />
     <dependencies>
       <group targetFramework=".NETStandard2.0" />
     </dependencies>
