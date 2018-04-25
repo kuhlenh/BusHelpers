@@ -1,0 +1,9 @@
+C:\Source\BusHelpers\bin\Debug\netstandard2.0\BusHelpers.deps.json
+C:\Source\BusHelpers\bin\Debug\netstandard2.0\BusHelpers.dll
+C:\Source\BusHelpers\bin\Debug\netstandard2.0\BusHelpers.pdb
+C:\Source\BusHelpers\obj\Debug\netstandard2.0\BusHelpers.csprojAssemblyReference.cache
+C:\Source\BusHelpers\obj\Debug\netstandard2.0\BusHelpers.csproj.CoreCompileInputs.cache
+C:\Source\BusHelpers\obj\Debug\netstandard2.0\BusHelpers.AssemblyInfoInputs.cache
+C:\Source\BusHelpers\obj\Debug\netstandard2.0\BusHelpers.AssemblyInfo.cs
+C:\Source\BusHelpers\obj\Debug\netstandard2.0\BusHelpers.dll
+C:\Source\BusHelpers\obj\Debug\netstandard2.0\BusHelpers.pdb
