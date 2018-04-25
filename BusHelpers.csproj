@@ -2,6 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    
+    <!-- Declare that this is a public repo. Library owners will have to add this for SourceLink to work -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    
+    <!-- This is the feed for SourceLink. Worked with community on evolving package and integrating with .NET SDK and VS experience -->
+    <RestoreSources>https://dotnet.myget.org/F/sourcelink/api/v3/index.json</RestoreSources>
   </PropertyGroup>
+  
+    <!-- SourceLink.Provider {GitHub, VSTS} -->
+  <ItemGroup>
+    <PackageReference Include="SourceLink.GitHub" Version="1.0.0-beta-62820-06" PrivateAssets="all" />
+  </ItemGroup>
 
 </Project>

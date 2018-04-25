@@ -12,4 +12,8 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.build.tasks.git\1.0.0-beta-62820-06\build\Microsoft.Build.Tasks.Git.props" Condition="Exists('$(NuGetPackageRoot)microsoft.build.tasks.git\1.0.0-beta-62820-06\build\Microsoft.Build.Tasks.Git.props')" />
+    <Import Project="$(NuGetPackageRoot)sourcelink.github\1.0.0-beta-62820-06\build\SourceLink.GitHub.props" Condition="Exists('$(NuGetPackageRoot)sourcelink.github\1.0.0-beta-62820-06\build\SourceLink.GitHub.props')" />
+  </ImportGroup>
 </Project>

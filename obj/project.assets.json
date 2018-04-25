@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "Microsoft.Build.Tasks.Git/1.0.0-beta-62820-06": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Build.Tasks.Git.props": {}
+        }
+      },
+      "Microsoft.Build.Tasks.SourceControl/1.0.0-beta-62820-06": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Build.Tasks.SourceControl.targets": {}
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -25,10 +37,62 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "SourceLink.GitHub/1.0.0-beta-62820-06": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Build.Tasks.Git": "1.0.0-beta-62820-06",
+          "Microsoft.Build.Tasks.SourceControl": "1.0.0-beta-62820-06"
+        },
+        "build": {
+          "build/SourceLink.GitHub.props": {},
+          "build/SourceLink.GitHub.targets": {}
+        }
       }
     }
   },
   "libraries": {
+    "Microsoft.Build.Tasks.Git/1.0.0-beta-62820-06": {
+      "sha512": "9B/Qp5P/hWZCvdpQoIQLHROMUSUmw8Knol//d8U+eiFRsX9jYegp4QtMIDbyn/D2fpkAkBs40nKLU9jS5jrafw==",
+      "type": "package",
+      "path": "microsoft.build.tasks.git/1.0.0-beta-62820-06",
+      "files": [
+        "build/Microsoft.Build.Tasks.Git.props",
+        "microsoft.build.tasks.git.1.0.0-beta-62820-06.nupkg.sha512",
+        "microsoft.build.tasks.git.nuspec",
+        "tools/net461/LibGit2Sharp.dll",
+        "tools/net461/LibGit2Sharp.dll.config",
+        "tools/net461/Microsoft.Build.Tasks.Git.dll",
+        "tools/net461/Microsoft.Build.Tasks.Git.pdb",
+        "tools/net461/lib/linux/x86_64/libgit2-6311e88.so",
+        "tools/net461/lib/osx/libgit2-6311e88.dylib",
+        "tools/net461/lib/win32/x64/git2-6311e88.dll",
+        "tools/net461/lib/win32/x86/git2-6311e88.dll",
+        "tools/netcoreapp2.0/LibGit2Sharp.dll",
+        "tools/netcoreapp2.0/Microsoft.Build.Tasks.Git.deps.json",
+        "tools/netcoreapp2.0/Microsoft.Build.Tasks.Git.dll",
+        "tools/netcoreapp2.0/Microsoft.Build.Tasks.Git.pdb",
+        "tools/netcoreapp2.0/runtimes/linux-x64/native/libgit2-6311e88.so",
+        "tools/netcoreapp2.0/runtimes/osx/native/libgit2-6311e88.dylib",
+        "tools/netcoreapp2.0/runtimes/win7-x64/native/git2-6311e88.dll",
+        "tools/netcoreapp2.0/runtimes/win7-x86/native/git2-6311e88.dll"
+      ]
+    },
+    "Microsoft.Build.Tasks.SourceControl/1.0.0-beta-62820-06": {
+      "sha512": "OIga/wabPtMVkychvt8osXcZfRE1CGRpC7mKZU8y6pEnNS1CqjnkenDy7Ma9ryTKjQm0DTs3cVLHF4Xzq3boNA==",
+      "type": "package",
+      "path": "microsoft.build.tasks.sourcecontrol/1.0.0-beta-62820-06",
+      "files": [
+        "build/Microsoft.Build.Tasks.SourceControl.targets",
+        "microsoft.build.tasks.sourcecontrol.1.0.0-beta-62820-06.nupkg.sha512",
+        "microsoft.build.tasks.sourcecontrol.nuspec",
+        "tools/net461/Microsoft.Build.Tasks.SourceControl.dll",
+        "tools/net461/Microsoft.Build.Tasks.SourceControl.pdb",
+        "tools/netcoreapp2.0/Microsoft.Build.Tasks.SourceControl.deps.json",
+        "tools/netcoreapp2.0/Microsoft.Build.Tasks.SourceControl.dll",
+        "tools/netcoreapp2.0/Microsoft.Build.Tasks.SourceControl.pdb"
+      ]
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
@@ -168,11 +232,28 @@
         "netstandard.library.2.0.2.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "SourceLink.GitHub/1.0.0-beta-62820-06": {
+      "sha512": "/xEJEte1O5zN1mNFSV9Qsjru61uuhB4a4InWlQJneKd5QOxbH5l0zdGk8lZXFVR21EG67D9VlKA0Fjl+ASFBGQ==",
+      "type": "package",
+      "path": "sourcelink.github/1.0.0-beta-62820-06",
+      "files": [
+        "build/SourceLink.GitHub.props",
+        "build/SourceLink.GitHub.targets",
+        "sourcelink.github.1.0.0-beta-62820-06.nupkg.sha512",
+        "sourcelink.github.nuspec",
+        "tools/net461/SourceLink.GitHub.dll",
+        "tools/net461/SourceLink.GitHub.pdb",
+        "tools/netcoreapp2.0/SourceLink.GitHub.deps.json",
+        "tools/netcoreapp2.0/SourceLink.GitHub.dll",
+        "tools/netcoreapp2.0/SourceLink.GitHub.pdb"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.2"
+      "NETStandard.Library >= 2.0.2",
+      "SourceLink.GitHub >= 1.0.0-beta-62820-06"
     ]
   },
   "packageFolders": {
@@ -199,11 +280,7 @@
         "netstandard2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\kaseyu\\.dotnet\\NuGetFallbackFolder": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://dotnet.myget.org/F/roslyn-analyzers/api/v3/index.json": {},
-        "https://dotnet.myget.org/F/source-link-test-feed/api/v2": {}
+        "https://dotnet.myget.org/F/sourcelink/api/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {
@@ -224,6 +301,11 @@
             "target": "Package",
             "version": "[2.0.2, )",
             "autoReferenced": true
+          },
+          "SourceLink.GitHub": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.0.0-beta-62820-06, )"
           }
         },
         "imports": [
