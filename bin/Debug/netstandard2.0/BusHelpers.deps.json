@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "746cc5fdfadb327b7b6944ec8270771aff7c5c60"
+    "signature": "b8d38abbe8a3ab25f231b5bbd3ba6f4ab9e00aad"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,25 +9,25 @@
     ".NETStandard,Version=v2.0/": {
       "BusHelpers/1.0.0": {
         "dependencies": {
-          "NETStandard.Library": "2.0.2",
-          "SourceLink.GitHub": "1.0.0-beta-62820-06"
+          "Microsoft.SourceLink.GitHub": "1.0.0-beta-62901-04",
+          "NETStandard.Library": "2.0.2"
         },
         "runtime": {
           "BusHelpers.dll": {}
         }
       },
-      "Microsoft.Build.Tasks.Git/1.0.0-beta-62820-06": {},
-      "Microsoft.Build.Tasks.SourceControl/1.0.0-beta-62820-06": {},
+      "Microsoft.Build.Tasks.Git/1.0.0-beta-62901-04": {},
+      "Microsoft.Build.Tasks.SourceControl/1.0.0-beta-62901-04": {},
       "Microsoft.NETCore.Platforms/1.1.0": {},
+      "Microsoft.SourceLink.GitHub/1.0.0-beta-62901-04": {
+        "dependencies": {
+          "Microsoft.Build.Tasks.Git": "1.0.0-beta-62901-04",
+          "Microsoft.Build.Tasks.SourceControl": "1.0.0-beta-62901-04"
+        }
+      },
       "NETStandard.Library/2.0.2": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
-        }
-      },
-      "SourceLink.GitHub/1.0.0-beta-62820-06": {
-        "dependencies": {
-          "Microsoft.Build.Tasks.Git": "1.0.0-beta-62820-06",
-          "Microsoft.Build.Tasks.SourceControl": "1.0.0-beta-62820-06"
         }
       }
     }
@@ -38,19 +38,19 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.Build.Tasks.Git/1.0.0-beta-62820-06": {
+    "Microsoft.Build.Tasks.Git/1.0.0-beta-62901-04": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-9B/Qp5P/hWZCvdpQoIQLHROMUSUmw8Knol//d8U+eiFRsX9jYegp4QtMIDbyn/D2fpkAkBs40nKLU9jS5jrafw==",
-      "path": "microsoft.build.tasks.git/1.0.0-beta-62820-06",
-      "hashPath": "microsoft.build.tasks.git.1.0.0-beta-62820-06.nupkg.sha512"
+      "sha512": "sha512-KcQ8NgtRYBxwlGnrnAierjyrwil0wQv2mWRUNxcb/rvW6pQCd8AX/RG20HG6eW1qHpIVJL5vam2SdmeVrbQgGQ==",
+      "path": "microsoft.build.tasks.git/1.0.0-beta-62901-04",
+      "hashPath": "microsoft.build.tasks.git.1.0.0-beta-62901-04.nupkg.sha512"
     },
-    "Microsoft.Build.Tasks.SourceControl/1.0.0-beta-62820-06": {
+    "Microsoft.Build.Tasks.SourceControl/1.0.0-beta-62901-04": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OIga/wabPtMVkychvt8osXcZfRE1CGRpC7mKZU8y6pEnNS1CqjnkenDy7Ma9ryTKjQm0DTs3cVLHF4Xzq3boNA==",
-      "path": "microsoft.build.tasks.sourcecontrol/1.0.0-beta-62820-06",
-      "hashPath": "microsoft.build.tasks.sourcecontrol.1.0.0-beta-62820-06.nupkg.sha512"
+      "sha512": "sha512-1q6V6ZWcY+wTMod83o9t6liS6It9qaLuB+NytQce5JKptuMSxL+dJRpFLkz961SsxHEZABCEZWTug1G3z4WMKA==",
+      "path": "microsoft.build.tasks.sourcecontrol/1.0.0-beta-62901-04",
+      "hashPath": "microsoft.build.tasks.sourcecontrol.1.0.0-beta-62901-04.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -59,19 +59,19 @@
       "path": "microsoft.netcore.platforms/1.1.0",
       "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
     },
+    "Microsoft.SourceLink.GitHub/1.0.0-beta-62901-04": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1BEbrn6TILqP4YMmuTkFbjrxW/ZlrZSt3fKwovBTFSNZ21buXPY4G8WsMgr2IOnTaNVeWFV/qi3XsNm5BHhOMg==",
+      "path": "microsoft.sourcelink.github/1.0.0-beta-62901-04",
+      "hashPath": "microsoft.sourcelink.github.1.0.0-beta-62901-04.nupkg.sha512"
+    },
     "NETStandard.Library/2.0.2": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-5hB7QTrTeMzV5xnTH4+zNBOGCD5/DcSVb3iPGgyta4Xje5AI2gJoeLnArlQCzxTbRVpx8YrjnjAmUhkxjbd2ZA==",
       "path": "netstandard.library/2.0.2",
       "hashPath": "netstandard.library.2.0.2.nupkg.sha512"
-    },
-    "SourceLink.GitHub/1.0.0-beta-62820-06": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-/xEJEte1O5zN1mNFSV9Qsjru61uuhB4a4InWlQJneKd5QOxbH5l0zdGk8lZXFVR21EG67D9VlKA0Fjl+ASFBGQ==",
-      "path": "sourcelink.github/1.0.0-beta-62820-06",
-      "hashPath": "sourcelink.github.1.0.0-beta-62820-06.nupkg.sha512"
     }
   }
 }

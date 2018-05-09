@@ -7,12 +7,13 @@
     <owners>BusHelpers</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Package Description</description>
-    <repository type="git" url="https://github.com/kuhlenh/BusHelpers.git" commit="4496fb5f8b96c8d4e0606a8fd1fbb9e63f81fc1f" />
+    <repository type="git" url="https://github.com/kuhlenh/BusHelpers.git" commit="64ac12d843899d1761db621673e4a045dd0a3465" />
     <dependencies>
       <group targetFramework=".NETStandard2.0" />
     </dependencies>
   </metadata>
   <files>
+    <file src="C:\Source\BusHelpers\bin\Debug\netstandard2.0\BusHelpers.pdb" target="lib\netstandard2.0\BusHelpers.pdb" />
     <file src="C:\Source\BusHelpers\bin\Debug\netstandard2.0\BusHelpers.dll" target="lib\netstandard2.0\BusHelpers.dll" />
   </files>
 </package>

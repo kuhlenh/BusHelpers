@@ -5,14 +5,14 @@
     
     <!-- Declare that this is a public repo. Library owners will have to add this for SourceLink to work -->
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    
-    <!-- This is the feed for SourceLink. Worked with community on evolving package and integrating with .NET SDK and VS experience -->
-    <RestoreSources>https://dotnet.myget.org/F/sourcelink/api/v3/index.json</RestoreSources>
+
+    <!-- Include PDB in the built .nupkg -->
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>    
   </PropertyGroup>
   
-    <!-- SourceLink.Provider {GitHub, VSTS} -->
+  <!-- SourceLink provider: GitHub, VSTS, etc. -->
   <ItemGroup>
-    <PackageReference Include="SourceLink.GitHub" Version="1.0.0-beta-62820-06" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta-62908-01" PrivateAssets="all" />
   </ItemGroup>
 
 </Project>

@@ -2,13 +2,13 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
-      "Microsoft.Build.Tasks.Git/1.0.0-beta-62820-06": {
+      "Microsoft.Build.Tasks.Git/1.0.0-beta-62901-04": {
         "type": "package",
         "build": {
           "build/Microsoft.Build.Tasks.Git.props": {}
         }
       },
-      "Microsoft.Build.Tasks.SourceControl/1.0.0-beta-62820-06": {
+      "Microsoft.Build.Tasks.SourceControl/1.0.0-beta-62901-04": {
         "type": "package",
         "build": {
           "build/Microsoft.Build.Tasks.SourceControl.targets": {}
@@ -21,6 +21,17 @@
         },
         "runtime": {
           "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.SourceLink.GitHub/1.0.0-beta-62901-04": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Build.Tasks.Git": "1.0.0-beta-62901-04",
+          "Microsoft.Build.Tasks.SourceControl": "1.0.0-beta-62901-04"
+        },
+        "build": {
+          "build/Microsoft.SourceLink.GitHub.props": {},
+          "build/Microsoft.SourceLink.GitHub.targets": {}
         }
       },
       "NETStandard.Library/2.0.2": {
@@ -37,28 +48,17 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
-      },
-      "SourceLink.GitHub/1.0.0-beta-62820-06": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Build.Tasks.Git": "1.0.0-beta-62820-06",
-          "Microsoft.Build.Tasks.SourceControl": "1.0.0-beta-62820-06"
-        },
-        "build": {
-          "build/SourceLink.GitHub.props": {},
-          "build/SourceLink.GitHub.targets": {}
-        }
       }
     }
   },
   "libraries": {
-    "Microsoft.Build.Tasks.Git/1.0.0-beta-62820-06": {
-      "sha512": "9B/Qp5P/hWZCvdpQoIQLHROMUSUmw8Knol//d8U+eiFRsX9jYegp4QtMIDbyn/D2fpkAkBs40nKLU9jS5jrafw==",
+    "Microsoft.Build.Tasks.Git/1.0.0-beta-62901-04": {
+      "sha512": "KcQ8NgtRYBxwlGnrnAierjyrwil0wQv2mWRUNxcb/rvW6pQCd8AX/RG20HG6eW1qHpIVJL5vam2SdmeVrbQgGQ==",
       "type": "package",
-      "path": "microsoft.build.tasks.git/1.0.0-beta-62820-06",
+      "path": "microsoft.build.tasks.git/1.0.0-beta-62901-04",
       "files": [
         "build/Microsoft.Build.Tasks.Git.props",
-        "microsoft.build.tasks.git.1.0.0-beta-62820-06.nupkg.sha512",
+        "microsoft.build.tasks.git.1.0.0-beta-62901-04.nupkg.sha512",
         "microsoft.build.tasks.git.nuspec",
         "tools/net461/LibGit2Sharp.dll",
         "tools/net461/LibGit2Sharp.dll.config",
@@ -78,13 +78,13 @@
         "tools/netcoreapp2.0/runtimes/win7-x86/native/git2-6311e88.dll"
       ]
     },
-    "Microsoft.Build.Tasks.SourceControl/1.0.0-beta-62820-06": {
-      "sha512": "OIga/wabPtMVkychvt8osXcZfRE1CGRpC7mKZU8y6pEnNS1CqjnkenDy7Ma9ryTKjQm0DTs3cVLHF4Xzq3boNA==",
+    "Microsoft.Build.Tasks.SourceControl/1.0.0-beta-62901-04": {
+      "sha512": "1q6V6ZWcY+wTMod83o9t6liS6It9qaLuB+NytQce5JKptuMSxL+dJRpFLkz961SsxHEZABCEZWTug1G3z4WMKA==",
       "type": "package",
-      "path": "microsoft.build.tasks.sourcecontrol/1.0.0-beta-62820-06",
+      "path": "microsoft.build.tasks.sourcecontrol/1.0.0-beta-62901-04",
       "files": [
         "build/Microsoft.Build.Tasks.SourceControl.targets",
-        "microsoft.build.tasks.sourcecontrol.1.0.0-beta-62820-06.nupkg.sha512",
+        "microsoft.build.tasks.sourcecontrol.1.0.0-beta-62901-04.nupkg.sha512",
         "microsoft.build.tasks.sourcecontrol.nuspec",
         "tools/net461/Microsoft.Build.Tasks.SourceControl.dll",
         "tools/net461/Microsoft.Build.Tasks.SourceControl.pdb",
@@ -104,6 +104,20 @@
         "microsoft.netcore.platforms.1.1.0.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
         "runtime.json"
+      ]
+    },
+    "Microsoft.SourceLink.GitHub/1.0.0-beta-62901-04": {
+      "sha512": "1BEbrn6TILqP4YMmuTkFbjrxW/ZlrZSt3fKwovBTFSNZ21buXPY4G8WsMgr2IOnTaNVeWFV/qi3XsNm5BHhOMg==",
+      "type": "package",
+      "path": "microsoft.sourcelink.github/1.0.0-beta-62901-04",
+      "files": [
+        "build/Microsoft.SourceLink.GitHub.props",
+        "build/Microsoft.SourceLink.GitHub.targets",
+        "microsoft.sourcelink.github.1.0.0-beta-62901-04.nupkg.sha512",
+        "microsoft.sourcelink.github.nuspec",
+        "tools/netcoreapp2.0/Microsoft.SourceLink.GitHub.deps.json",
+        "tools/netcoreapp2.0/Microsoft.SourceLink.GitHub.dll",
+        "tools/netcoreapp2.0/Microsoft.SourceLink.GitHub.pdb"
       ]
     },
     "NETStandard.Library/2.0.2": {
@@ -232,28 +246,12 @@
         "netstandard.library.2.0.2.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
-    },
-    "SourceLink.GitHub/1.0.0-beta-62820-06": {
-      "sha512": "/xEJEte1O5zN1mNFSV9Qsjru61uuhB4a4InWlQJneKd5QOxbH5l0zdGk8lZXFVR21EG67D9VlKA0Fjl+ASFBGQ==",
-      "type": "package",
-      "path": "sourcelink.github/1.0.0-beta-62820-06",
-      "files": [
-        "build/SourceLink.GitHub.props",
-        "build/SourceLink.GitHub.targets",
-        "sourcelink.github.1.0.0-beta-62820-06.nupkg.sha512",
-        "sourcelink.github.nuspec",
-        "tools/net461/SourceLink.GitHub.dll",
-        "tools/net461/SourceLink.GitHub.pdb",
-        "tools/netcoreapp2.0/SourceLink.GitHub.deps.json",
-        "tools/netcoreapp2.0/SourceLink.GitHub.dll",
-        "tools/netcoreapp2.0/SourceLink.GitHub.pdb"
-      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.2",
-      "SourceLink.GitHub >= 1.0.0-beta-62820-06"
+      "Microsoft.SourceLink.GitHub >= 1.0.0-beta-62901-04",
+      "NETStandard.Library >= 2.0.2"
     ]
   },
   "packageFolders": {
@@ -296,16 +294,16 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
+          "Microsoft.SourceLink.GitHub": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.0.0-beta-62901-04, )"
+          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
             "version": "[2.0.2, )",
             "autoReferenced": true
-          },
-          "SourceLink.GitHub": {
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[1.0.0-beta-62820-06, )"
           }
         },
         "imports": [
